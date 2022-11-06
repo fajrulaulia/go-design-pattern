@@ -31,11 +31,12 @@ func GetDbInstance() *Database {
 }
 
 // Singleton Safaly using Once
-func GetDbInstanceAsync() *Database {
+func GetDbInstanceAsync(wg *sync.WaitGroup) *Database {
 	once.Do(func() {
 		log.Println("Create Instance")
 		Db = &Database{}
 	})
 	log.Println("Returning Instance")
+	wg.Done()
 	return Db
 }

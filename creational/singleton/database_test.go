@@ -1,8 +1,8 @@
 package singleton
 
 import (
+	"sync"
 	"testing"
-	"time"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -27,9 +27,11 @@ func TestSingletonInitialzieDatabaseSuccess(t *testing.T) {
 }
 
 func TestSingletonInitialzieDatabaseAsyncSuccess(t *testing.T) {
+	var wg sync.WaitGroup
 
 	for i := 0; i < 100; i++ {
-		go GetDbInstanceAsync()
+		wg.Add(1)
+		go GetDbInstanceAsync(&wg)
 	}
-	time.Sleep(time.Second * 10)
+	wg.Wait()
 }

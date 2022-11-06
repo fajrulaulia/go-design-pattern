@@ -1,4 +1,9 @@
 mode: set
+github.com/fajrulaulia/golang-design-pattern/creational/singleton/database.go:9.29,13.2 1 1
+github.com/fajrulaulia/golang-design-pattern/creational/singleton/database.go:15.44,17.2 1 1
+github.com/fajrulaulia/golang-design-pattern/creational/singleton/database.go:21.32,22.15 1 1
+github.com/fajrulaulia/golang-design-pattern/creational/singleton/database.go:26.2,27.11 2 1
+github.com/fajrulaulia/golang-design-pattern/creational/singleton/database.go:22.15,25.3 2 1
 github.com/fajrulaulia/golang-design-pattern/creational/factory/Account.go:18.33,20.2 1 0
 github.com/fajrulaulia/golang-design-pattern/creational/factory/Account.go:22.40,24.2 1 0
 github.com/fajrulaulia/golang-design-pattern/creational/factory/Account.go:25.50,27.2 1 0

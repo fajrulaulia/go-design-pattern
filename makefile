@@ -1,2 +1,2 @@
 test:
-	@gotestsum --format testname  -- -coverprofile=cover.out ./...
+	@gotestsum --format testname  -- -coverprofile=cover.out ./... -v 

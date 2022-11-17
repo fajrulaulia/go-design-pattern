@@ -1,2 +1,3 @@
 test:
-	@gotestsum --format testname  -- -coverprofile=cover.out ./... -v 
+	@gotestsum --format testname  -- -coverprofile=coverage.out ./... -v 
+	@go tool cover -html=coverage.out

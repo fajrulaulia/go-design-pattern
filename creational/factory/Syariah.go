@@ -11,7 +11,7 @@ func (n AccountSyariah) String() string {
 }
 
 func createSyariahAccount(id int, name string, AccountNo string) AccountIface {
-	return &AccountKonvesional{
+	return &AccountSyariah{
 		Account: Account{
 			ID:        id,
 			Name:      name,
